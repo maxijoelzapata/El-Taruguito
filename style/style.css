@@ -1,0 +1,251 @@
+/*estilo para el header de las pages*/
+
+header{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #d3d3d3;
+    align-items: center;
+    background-image: url(./../img/banner-madera.jpg);
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-align: center;
+    font-size: larger;
+    text-decoration: none;
+    font-size: 25px;
+    color: #0a0a0a ;
+}
+
+
+/*estilo para el titulo*/
+
+h1{
+    margin-top: 20px;
+    padding: 30px;
+    background-color: #daa520;
+    color: #2f4f4f;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    text-decoration: underline;
+    border-top: 2px solid #0a0a0a ;
+    border-bottom: 2px solid #0a0a0a;
+}
+
+
+/*estilo de letras para las card*/
+
+h2{
+    text-decoration: underline;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style:inherit;
+}
+
+.imagenes-inicio{
+    display: flex;
+    padding: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 30px;
+    column-gap: 70px;
+}
+
+.card-inicio{
+    background-color: #daa520;
+    color:#0a0a0a;
+    width: 350px;
+    height: 400px;
+    border-radius: 10px 10px;
+    overflow: hidden;
+    box-shadow: 9px 15px 13px 1px rgba(0,0,0,0.97);
+}
+
+.card-inicio img{
+    width: 100%;
+    height: 250px;
+}
+
+.card-texto{
+    padding: 35px;
+    height: 150px;
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+.footer-inicio{
+    margin: 50px;
+    text-align: center;
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 9px 9px 9px 9px;
+    box-shadow: 0px 0px 13px 5px rgba(0,0,0,0.46);
+}
+
+
+/*estilo para grid y carrusel*/
+
+.slide{
+    margin: 30px;
+}
+
+.slide img{
+    height: 100vh;
+}
+
+.grid-container{
+    margin: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.grid-item{
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.grid-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*estilo para footer de galeria*/
+
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+.lista-muebles{
+    width: 300px;
+    height: 500px;
+    margin: 30px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #2f4f4f;
+}
+
+.lista-mueble-madera{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*estilo main nosotros*/
+
+.sobre-nosotros{
+    display: flex;
+    color:#0a0a0a;
+    margin-top: 10vh;
+    font-size: 35px;
+    
+}
+
+
+.logo-taruguito-nosotros{
+    display: flex;
+    margin-top: 1vh;
+    justify-content:center;
+}
+
+.texto-nosotros{
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    color: #2f4f4f;
+}
+
+
+/*estilos footer iconos*/
+.iconos-redes{
+    background-image: radial-gradient( circle 767px at 10.2% 22.1%,  rgba(11,218,81,1) 0%, rgba(196, 155, 20, 0.932) 90% );
+    min-height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    margin: 20px;
+    min-width: 700px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons a {
+    text-decoration: none;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #314652;
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+}
+
+.buttons a:hover {
+    transform: scale(1.2);
+}
+
+
+/*estilo contacto*/
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    margin: 20px;
+    background-color: #0056b3;
+}
+
+
+.comentarios-google{
+    justify-content: center;
+}
