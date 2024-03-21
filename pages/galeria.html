@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!--link bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!--link css-->
-    <link rel="stylesheet" href="./../style/style.css">
+    <link rel="stylesheet" href="./../css/style.css">
+    <!--link iconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <title>Galeria</title>
 </head>
 <body>
     <header>
-        <div>
-            <img src="./../img/logo-el-taruguito.png" alt="logo-taruguito">
+        <div class="logo">
+            <img src="./../img/inicio/Logo-taruguito.png" alt="texto-logo">
+            <h2 class="texto-logo">El Taruguito®</h2>
         </div>
         <nav>
             <ul>
@@ -33,66 +35,114 @@
         </nav>
     </header>
     <main>
-        <h1>GALERIA</h1>
-        <div class="grid-container">
-            <div class="grid-item"><img src="./../img/foto-galeria-1.heic" alt="Foto 1"></div>
-            <div class="grid-item"><img src="./../img/foto-galeria-2.heic" alt="Foto 2"></div>
-            <div class="grid-item"><img src="./../img/foto-galeria-3.heic" alt="Foto 3"></div>
-            <div class="grid-item"><img src="./../img/foto-galeria-4.heic" alt="Foto 4"></div>
-            <div class="grid-item"><img src="./../img/foto-galeria-5.heic" alt="Foto 5"></div>
-            <div class="grid-item"><img src="./../img/foto-galeria-6.heic" alt="Foto 6"></div>
-        </div>
         <div>
-            <div id="carouselExampleIndicators" class="carousel slide">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <h2 class="encabezado-main">"ALGUNOS TRABAJOS"</h2>
+        </div>
+        <section>
+            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="./../img/cocina-isla/cocina-isla-1.heic" class="d-block w-100" alt="cocina isla 1">
                 </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./../img/mueble-paraiso-1.jpg" class="d-block w-100" alt="mueble de paraiso">
+                <div class="carousel-item">
+                    <img src="./../img/cocina-isla/cocina-isla-2.heic" class="d-block w-100" alt="cocina isla 2">
                 </div>
-            <div class="carousel-item">
-                <img src="./../img/mueble-paraiso-2.heic" class="d-block w-100" alt="mueble de paraiso">
-            </div>
-            <div class="carousel-item">
-                <img src="./../img/mueble-paraiso-3.heic" class="d-block w-100" alt="mueble de paraiso">
-            </div>
-            </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <div class="carousel-item">
+                    <img src="./../img/cocina-isla/cocina-isla-3.heic" class="d-block w-100" alt="cocina isla 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="./../img/placar-caju/placard-caju-1.heic" class="d-block w-100" alt="placard 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./../img/placar-caju/placard-caju-2.heic" class="d-block w-100" alt="placard 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./../img/placar-caju/placard-caju-3.heic" class="d-block w-100" alt="placard 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="./../img//rack-tv-safari/rack-safari-1.heic" class="d-block w-100" alt="rack tv 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./../img/rack-tv-safari/rack-safari-2.heic" class="d-block w-100" alt="rack tv 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./../img/rack-tv-safari/rack-safari-3.heic" class="d-block w-100" alt="rack tv 3">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
-            </button>
+                </button>
+            </div>
+        </section>
+        <h3>!!DESTACADOS!!</h3>
+        <section class="h3-destacados">
+            <div class="contenedor-destacados">
+                <div class="card">
+                    <img src="./../img/card-galeria/card-1.heic" alt="card 1">
+                    <div class="card-texto">
+                        <h4>PLACARD MODULAR Y RACK TV</h4>
+                        <p>incluye sistema push open + luces led</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./../img/card-galeria/card-2.heic" alt="card 2">
+                    <div class="card-texto">
+                        <h4>ALACENAS Y BAJO MESADA (BLANCO)</h4>
+                        <p>incluye sistema push open + tiradores</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./../img/card-galeria/card-3.heic" alt="card 3">
+                    <div class="card-texto">
+                        <h4>COCINA COMPLETA (SEDA NOTE)</h4>
+                        <p>incluye sistema push open + perfil gola</p>
+                    </div>
+                </div>
+        </section>
+        <section class="contenedor-destacados">
+            <div class="card">
+                <img src="./../img/card-galeria/card-4.heic" alt="card 4">
+                <div class="card-texto">
+                    <h4>RACK TV + BARILLADO + ALACENAS</h4>
+                    <p>incluye sistema push open + instalacion tv</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./../img/card-galeria/card-5.heic" alt="card 5">
+                <div class="card-texto">
+                    <h4>ESCRITORIO + ALACENAS</h4>
+                    <p>incluye sistema push open + luz led + estante flotante</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./../img/card-galeria/card-6.webp" alt="card 6">
+                <div class="card-texto">
+                    <h4>RACK TV FLOTANTE</h4>
+                    <p>incluye sistema push open + cuelga alacena + instalacion tv</p>
+                </div>
             </div>
         </div>
+        </section>
     </main>
     <footer>
-        <h2>TIPOS DE MUEBLES / MADERAS</h2>
-        <div class="lista-mueble-madera">
-            <ul class="lista-muebles">
-                <li>ALACENA</li>
-                <li>PLACARD</li>
-                <li>CAMA BOX</li>
-                <li>ESCRITORIO</li>
-                <li>BAJO MESADA</li>
-                <li>RACK TV</li>
-            </ul>
-            <ul class="lista-muebles">
-                <li>MDF</li>
-                <li>AGLOMERADO</li>
-                <li>ESPESOR 15MM</li>
-                <li>ESPESOR 18MM</li>
-                <li>ESPESOR 25MM</li>
-                <li>ESPESOR 36MM</li>
-        </ul>
+        <div class="contenedor-iconos">
+            <a href="https://www.facebook.com/ElTaruguito" target="_blank" class="facebook">
+                <i class="fa-brands fa-square-facebook"></i>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=%2B5491132850600&data=ARDeHVQwS243sfsuLPkKN_8N6WnzYNBm3doWta22cYXadPf4ogykFLX2KhXikEbm2vlrd4-BFOg2djUSdYfu5QsR_bVfOjMwh8NrtNg6vafvQRmEV5WIad3hBFDIcotoHH_mOSAGFDT-RLV1Lu8pBaGO9g&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR1yK0KQrRw5oL0gIE6IGrfBOp1ViAN14vpjKAwEAfdYAfMRQbpo9ZFS7iQ" target="_blank" class="whatsapp">
+                <i class="fa-brands fa-square-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/eltaruguito/" target="_blank" class="instagram">
+                <i class="fa-brands fa-square-instagram"></i>
+            </a>
         </div>
-
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
+
 </html>

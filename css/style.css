@@ -1,0 +1,430 @@
+/*reset*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+/*estilo header*/
+
+header{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: linear-gradient(to right, rgba(8, 8, 8, 0.904) 35%,rgb(219, 182, 14));
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    height: 200px;
+}
+
+.texto-logo{
+    color: antiquewhite;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav a:hover{
+    color: antiquewhite;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+header nav ul li a{
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.623);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+
+/*estilo main inicio*/
+
+main{
+    background-image: url(./../img/inicio/background-img.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.encabezado-main{
+    padding: 20px;
+    font-size: 50px;
+    text-decoration: underline;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-inicio img{
+    width: 100%;
+    height: 400px;
+    border: 2px solid #000000}
+
+.grid-inicio{
+    margin: 30px;
+    padding-left: 20px;
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 450px);
+    grid-template-areas: 
+    "img1 img1 img2"
+    "img3 img4 img5"
+    ;
+}
+
+.img-1{
+    grid-area: img1;
+}
+
+.img-2{
+    grid-area: img2;
+}
+
+.img-3{
+    grid-area: img3;
+}
+
+.img-4{
+    grid-area: img4;
+}
+
+.img-5{
+    grid-area: img5;
+}
+
+
+.texto-main{
+    display: flex;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(199, 20, 20);
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.texto-parrafo{
+    padding: 30px;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.568);
+    text-align: center;
+}
+
+/*estilo footer*/
+
+.contenedor-iconos{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    background: linear-gradient(to right, rgba(8, 8, 8, 0.904) 35%,rgb(219, 182, 14));
+}
+
+.contenedor-iconos a{
+    font-size: 60px;
+    padding: 30px;
+}
+
+.facebook{
+    color: black;
+}
+
+.facebook:hover{
+    color: blue;
+    transform: scale(1.3);
+}
+
+.whatsapp{
+    color: black;
+}
+
+.whatsapp:hover{
+    color: green;
+    transform: scale(1.3);
+
+}
+
+.instagram{
+    color: black;
+}
+.instagram:hover{
+    color: rgb(209, 16, 167);
+    transform: scale(1.3);
+
+}
+
+/*carrusel bootstrap*/
+
+.carousel-inner img{
+    height: 600px;
+    padding: 60px;
+}
+
+/*estilos card galeria*/
+
+.h3-destacados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3{
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    display: flex;
+    color: rgb(199, 20, 20);
+    display: flex;
+    justify-content: center;
+}
+.contenedor-destacados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 40px;
+
+}
+
+.card{
+    width: 300px;
+    height: 350px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75);
+    border-radius: 24px 24px 24px 24px;
+    background: linear-gradient(to right, rgba(8, 8, 8, 0.322) 35%,rgb(233, 233, 232));
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+}
+
+.card-texto{
+    color: rgba(0, 0, 0, 0.637);
+    font-size: 20px;
+    padding: 20px;
+    padding-top: 10px;
+}
+
+.card-texto h4{
+    font-size: 18px;
+    padding: 5px;
+    color: rgb(66, 4, 4);
+}
+
+/*estilo contacto*/
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    margin: 20px;
+    background-color: #0056b3;
+}
+
+
+.comentarios-google{
+    justify-content: center;
+}
+
+.contacto-h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    text-decoration: underline;
+}
+
+.text-contacto{
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.623);
+}
+
+/*estilo nosotros*/
+
+.h3-nosotros{
+    color: rgba(10, 10, 10, 0.788);
+    padding: 20px;
+    font-size: 50px;
+}
+
+.texto-parrafo{
+    color: #000000c2;
+    font-size: 25px;
+    padding: 30px;
+}
+
+/*media querie tablet*/
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .logo img{
+        height: 100px;
+    }
+
+    .texto-logo{
+        font-size: 15px;
+    }
+
+    header nav ul li a{
+        font-size: 15px;
+    }
+
+    .encabezado-main{
+        padding: 20px;
+        font-size: 30px;
+    }
+
+    .grid-inicio{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 450px);
+        grid-template-areas: 
+        "img1 img1"
+        "img2 img3"
+        "img4 img5"
+        ;
+    }
+
+    .card{
+        width: 200px;
+        height: 350px;
+    }
+
+    .card-texto{
+        font-size: 15px;
+    }
+
+    .h3-nosotros{
+        font-size: 30px;
+    }
+}
+
+    /*media querie mobile*/
+
+    @media only screen and (max-width: 767px) {
+
+        header{
+            height: 110px;
+        }
+
+        header nav ul{
+            gap: 10px;
+            padding: 10px;
+        }
+
+    .logo img{
+        height: 80px;
+    }
+
+    .texto-logo{
+        font-size: 12px;
+    }
+
+
+
+    header nav ul li a{
+        font-size: 8px;
+    }
+
+    .encabezado-main{
+        font-size: 17px;
+    }
+
+
+    .grid-inicio img{
+        width: 100%;
+        height: 200px;
+        border: 2px solid #000000}
+
+    .grid-inicio{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 203px);
+        grid-template-areas: 
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5"
+        ;
+    }
+
+    .texto-main{
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+
+    .contenedor-destacados{
+
+    flex-direction: column;
+    }
+
+    .text-contacto{
+        font-size: 25px;
+    }
+
+    .h3-nosotros{
+        font-size: 25px;
+    }
+
+    .contenedor-iconos a{
+        font-size: 30px;
+        padding: 10px;
+    }
+
+}
+
+
+
+
+
+
+
