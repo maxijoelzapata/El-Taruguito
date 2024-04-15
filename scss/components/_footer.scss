@@ -1,0 +1,33 @@
+footer{
+    .contenedor-iconos{
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        background: linear-gradient(to right, rgba(8, 8, 8, 0.904) 35%,rgb(219, 182, 14));
+        a{
+            font-size: 60px;
+            padding: 30px;
+        }
+        .facebook{
+            color: black;
+            &:hover{
+                color: blue;
+                transform: scale(1.5);
+            }
+        }
+        .whatsapp{
+            color: black;
+            &:hover{
+                color: green;
+                transform: scale(1.5);
+            }
+        }
+        .instagram{
+            color: black;
+            &:hover{
+                color: rgb(209, 16, 167);
+                transform: scale(1.5);
+            }
+        }
+    }
+}

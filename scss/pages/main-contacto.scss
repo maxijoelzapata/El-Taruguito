@@ -1,0 +1,50 @@
+.main-contacto{
+    .contacto-h1{
+        @include flex (row, center, center);
+        padding-top: 15px;
+        text-decoration: underline;
+        .text-contacto{
+            @extend %estilo;
+        }
+    }
+    .comentarios-google{
+        justify-content: center;
+    }
+    form {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 30px;
+        .form-group{
+            margin-bottom: 20px;
+            label {
+            display: block;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 8px;
+            }
+            input[type="text"],
+            input[type="email"],
+            textarea{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid rgb(204, 204, 204);
+            border-radius: 5px;
+            }
+            textarea{
+                resize: vertical;
+            }
+        }
+        button{
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            &:hover{
+                margin: 5px;
+                background-color: #ce1452;
+            }
+        }
+    }
+}

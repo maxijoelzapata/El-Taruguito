@@ -1,0 +1,165 @@
+//media queries tablet
+
+@media screen and (max-width: 1023px){
+
+    header{
+        .logo{
+            img{
+                height: 100px;
+            }
+            .texto-logo{
+                font-size: 15px;
+            }
+        }
+        nav{
+            ul{
+                li{
+                    a{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+    //estilo de main index
+    .main-index{
+        .encabezado-main{
+            padding: 20px;
+            font-size: 30px;
+        }
+    .grid-inicio{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 450px);
+        grid-template-areas: 
+        "img1 img1"
+        "img2 img3"
+        "img4 img5"
+        ;
+    }
+    }
+
+    //estilo galeria (tiene 3 filas porque mi jefe usa la pag para el los clientes y queria fila de 3 menos en mobile)
+    .main-galeria{
+        .destacados{
+            .contenedor-destacados{
+                .card{
+                    width: 200px;
+                    height: 350px;
+                    .card-texto{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    //estilo nosotros
+    .main-nosotros{
+        .h3-nosotros{
+            font-size: 30px;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px){
+
+    header{
+        height: 110px;
+        nav{
+            ul{
+                gap: 10px;
+                padding: 10px;
+                li{
+                    a{
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+        .logo{
+            img{
+                height: 80px;
+            }
+            .texto-logo{
+                font-size: 12px;
+            }
+        }
+    }
+
+    //main index
+    .main-index{
+        padding: 22px;
+        .encabezado-main{
+            font-size: 17px;
+        }
+        .grid-inicio{
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(1, 203px);
+            grid-template-areas: 
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "img5"
+            ;
+            img{
+                width: 100%;
+                height: 200px;
+                border: 2px solid #000000
+            }
+        }
+        .texto-main{
+            font-size: 20px;
+            padding-bottom: 20px;
+        }
+        .texto-parrafo{
+            font-size: 20px;
+            margin: 20px;
+        }
+    }
+
+    //main galeria
+    .main-galeria{
+        .encabezado-main{
+            font-size: 25px;
+        }
+        h3{
+            font-size: 35px;
+        }
+        .destacados{
+            .contenedor-destacados{
+                flex-direction: column;
+            }
+        }
+    }
+
+    //main nosotros
+    .main-nosotros{
+        .h2-nosotros{
+            font-size: 25px;
+        }
+        .texto-parrafo{
+            font-size: 20px;
+            padding: 30px;
+        }
+    }
+
+    //contactos
+    .main-contacto{
+        .contacto-h1{
+            .text-contacto{
+                font-size: 35px;
+            }
+        }
+    }
+
+    //footer
+    footer{
+        .contenedor-iconos{
+            a{
+                font-size: 30px;
+                padding: 10px;
+            }
+        }
+    }
+}

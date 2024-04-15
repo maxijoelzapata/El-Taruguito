@@ -1,0 +1,13 @@
+.main-nosotros{
+    .h2-nosotros{
+        @include flex (row, center, center);
+        color: rgba(10, 10, 10, 0.788);
+        padding: 20px;
+        font-size: 50px;
+    }
+    .texto-parrafo{
+        color: #000000fd;
+        font-size: 30px;
+        padding: 50px;
+    }
+}
